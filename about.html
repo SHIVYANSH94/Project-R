@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – StellarVoyage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 StellarVoyage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html">Book</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content about-section">
+    <h2>Our Mission</h2>
+    <p>At <strong>StellarVoyage</strong>, we believe space should be for everyone. We are the pioneers of commercial space travel, connecting Earth to the cosmos with safety, innovation, and style.</p>
+
+    <h3>🌠 Why Choose Us?</h3>
+    <ul class="about-list">
+      <li>✅ 100% safety record</li>
+      <li>💺 Luxury-class travel with gravity simulations</li>
+      <li>🧠 AI-powered navigation & auto-docking</li>
+      <li>🌍 Eco-friendly plasma propulsion</li>
+    </ul>
+
+    <h3>🌌 Our Vision</h3>
+    <p>To become the world’s leading provider of interplanetary travel by 2035, with bases on the Moon, Mars, and beyond.</p>
+  </section>
+<!-- Add to bottom of body -->
+<div class="cursor" id="cursor"></div>
+<script>
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2025 StellarVoyage. All Rights Reserved.</p>
+  </footer>
+    <!-- Galactic Space Particle Background -->
+<div id="particles-js"></div>
+<!-- Particle Engine Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 160 },
+      color: { value: "#00ccff" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.2,
+        random: true,
+        anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: { enable: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00ccff",
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+  
+</script>
+</body>
+</html>

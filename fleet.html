@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+     <style>
+    h2{
+        text-align: center  ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 60px;
+
+    }
+    p{
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+    }
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fleet – StellarVoyage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 StellarVoyage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html">Book</a>
+      <a href="fleet.html" class="active">Fleet</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Our Spacecraft Fleet</h2>
+    <p>Engineered for interplanetary travel. Designed for you.</p>
+
+    <div class="fleet-grid">
+      <!-- Orion Cruiser -->
+      <div class="fleet-card">
+        <img src="fleet1.png" alt="Orion Cruiser" class="fleet-img" />
+        <h3>🛸 Orion Cruiser</h3>
+        <p><strong>Speed:</strong> Mach 15</p>
+        <p><strong>Capacity:</strong> 8 astronauts</p>
+        <p><strong>Features:</strong> AI Navigation, Emergency Boost, Solar Shielding</p>
+      </div>
+
+      <!-- Nebula Shuttle -->
+      <div class="fleet-card">
+        <img src="fleet2.png" alt="Nebula Shuttle" class="fleet-img" />
+        <h3>🚀 Nebula Shuttle</h3>
+        <p><strong>Speed:</strong> Mach 10</p>
+        <p><strong>Capacity:</strong> 12 astronauts</p>
+        <p><strong>Features:</strong> Orbit Lounge, Gravity Simulator, Dome Views</p>
+      </div>
+
+      <!-- Titan Voyager -->
+      <div class="fleet-card">
+        <img src="fleet3.jpg" alt="Titan Voyager" class="fleet-img" />
+        <h3>🛰️ Titan Voyager</h3>
+        <p><strong>Speed:</strong> Mach 8</p>
+        <p><strong>Capacity:</strong> 20 astronauts</p>
+        <p><strong>Features:</strong> Luxury Cabins, AI Chef, Deep Space WiFi</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 StellarVoyage. All Rights Reserved.</p>
+  </footer>
+
+<!-- Add to bottom of body -->
+<div class="cursor" id="cursor"></div>
+<script>
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+
+  
+</script>
+
+    <!-- Galactic Space Particle Background -->
+<div id="particles-js"></div>
+<!-- Particle Engine Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 160 },
+      color: { value: "#00ccff" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.2,
+        random: true,
+        anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: { enable: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00ccff",
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+
+  
+</script>
+</body>
+</html>

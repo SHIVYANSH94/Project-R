@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at bottom, #0f0f2b 0%, #000000 100%);
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #00ccff;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #00ccff;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0099cc;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ccff33;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #00ccff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background: #000000;
+  margin-top: 60px;
+}
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ccff;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0099cc;
+}
+.booking-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  background: #1a1a2e;
+  color: white;
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00ccff;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background: #0099cc;
+}
+.destination-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.destination-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ccff33;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+  border-color: #00ccff;
+}
+.fleet-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.fleet-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ccff33;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.fleet-card:hover {
+  transform: scale(1.05);
+  border-color: #00ccff;
+}
+.about-section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.about-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.about-list li {
+  background: rgba(255,255,255,0.05);
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #00ccff33;
+}
+.fleet-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.fleet-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ccff33;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.fleet-card:hover {
+  transform: scale(1.05);
+  border-color: #00ccff;
+}
+
+.fleet-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+/* Particle background layer behind everything */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000014, #01091a);
+  z-index: -1;
+}
+/* In style.css */
+body {
+  cursor: none; /* Hide default */
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ccff;
+  border-radius:10px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.05s ease-out;
+  z-index: 9999;
+}
+.cta-button:hover,
+.card:hover {
+  box-shadow: 0 0 20px #00ccff, 0 0 30px #00ccff88;
+}
+.card.glow {
+  box-shadow: 0 0 15px #00ccff, 0 0 30px #00ccff55;
+}

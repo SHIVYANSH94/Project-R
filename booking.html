@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Flight – StellarVoyage</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🚀 StellarVoyage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html" class="active">Book</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content booking-section">
+    <h2>Book Your Space Flight</h2>
+    <p>Secure your seat to the stars. Fill out the form below to begin your journey!</p>
+
+    <form class="booking-form">
+      <label>Full Name:
+        <input type="text" required />
+      </label>
+      <label>Email:
+        <input type="email" required />
+      </label>
+      <label>Select Destination:
+        <select required>
+          <option value="">-- Choose Destination --</option>
+          <option>🌕 Moon</option>
+          <option>🔴 Mars</option>
+          <option>🌑 Titan</option>
+        </select>
+      </label>
+      <label>Departure Date:
+        <input type="date" required />
+      </label>
+      <label>Class:
+        <select required>
+          <option value="">-- Choose Class --</option>
+          <option>Standard</option>
+          <option>OrbitX</option>
+          <option>VIP Capsule</option>
+        </select>
+      </label>
+      <button type="submit">Confirm Booking 🚀</button>
+    </form>
+  </section>
+<!-- Add to bottom of body -->
+<div class="cursor" id="cursor"></div>
+<script>
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2025 StellarVoyage. All Rights Reserved.</p>
+  </footer>
+    <!-- Galactic Space Particle Background -->
+<div id="particles-js"></div>
+<!-- Particle Engine Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 160 },
+      color: { value: "#00ccff" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.2,
+        random: true,
+        anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: { enable: false }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00ccff",
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+</body>
+</html>
